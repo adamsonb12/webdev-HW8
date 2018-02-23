@@ -11,3 +11,7 @@ body {
     color: white;
     text-align: center;
 }
+
+.add-margin {
+    padding: 5px;
+}

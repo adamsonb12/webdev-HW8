@@ -48,7 +48,68 @@
                 <p>Left Nav</p>
             </div>
             <div class="col-md-8 text-center">
-                <h1>Main Content</h1>
+                <form>
+                    <h2>Initiate Pipeline Run</h2>
+                    <div class="form-group">
+                        <label for="bookId">Book:</label>
+                        <select id="bookId">
+                            <option value="0">&lt;none&gt;</option>
+                            <option value="1">Kilbarchan Parish Record</option>
+                            <option value="2">The Ely Ancestry</option>
+                        </select>
+                    </div>
+                    <legend>Page Range</legend>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="startPage" size="5" value="1">
+                        </div>
+                        <span class="add-margin">-</span>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="endPage" size="5" value="100">
+                        </div>
+                    </div>
+                    <br />
+                    <legend>Tools</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tool1" name="tools" value="frontier" checked="checked">
+                        <label class="form-check-label" for="tool1">FROntIER</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tool2" name="tools" value="greendda">
+                        <label class="form-check-label" for="tool2">GreenDDA</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tool3" name="tools" value="greenfie">
+                        <label class="form-check-label" for="tool3">GreenFIE</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tool4" name="tools" value="listreader">
+                        <label class="form-check-label" for="tool4">ListReader</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tool5" name="tools" value="ontoes">
+                        <label class="form-check-label" for="tool5">OntoES</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tool6" name="tools" value="ontosoar">
+                        <label class="form-check-label" for="tool6">OntoSoar</label>
+                    </div>
+                    <br />
+                    <legend>Run Type</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="runtype" checked="checked"> with COMET
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="runtype"> without COMET
+                        </label>
+                    </div>
+                    <br />
+                    <a class="btn btn-danger" href="">Back</a>
+                    <input class="btn btn-success" type="submit" id="initiateRun" value="Run">
+                </form>
             </div>
             <div class="col-md-2 text-center">
                 <p>Right Nav</p>
@@ -63,9 +124,10 @@
         </div>
     </nav>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap’s JavaScript plugins) -->
+    <script src=“https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js”></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src=“https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js”></script>
 
 </body>
 
